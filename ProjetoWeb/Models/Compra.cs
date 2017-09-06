@@ -9,7 +9,7 @@ namespace ProjetoWeb.Models
     {
         public int Id { get; set; }
 
-        public String TipoProduto { get; set; }
+        public int NumeroProduto { get; set; }
 
     }
 }
