@@ -14,7 +14,7 @@ namespace ProjetoWeb.Controllers
             new NovoPedido {Id = 1, Produto = "Produto - 1" },
             new NovoPedido {Id = 2, Produto = "Produto - 2" },
             new NovoPedido {Id = 3, Produto = "Produto - 3" },
-
+            new NovoPedido {Id = 4, Produto = "Produto - 4" },
         };
 
         // GET: Cadastros

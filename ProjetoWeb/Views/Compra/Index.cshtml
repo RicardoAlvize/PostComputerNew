@@ -1,11 +1,11 @@
-﻿@model List<ProjetoWeb.Models.Cadastro>
+﻿@model List<ProjetoWeb.Models.Compra>
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Cliente</h2>
+<h2>Compra</h2>
 
 @if (@Model.Count > 0)
 {
@@ -16,7 +16,7 @@
         <tbody>
             @foreach (var customer in Model)
             {
-                <tr><td>@Html.ActionLink(@customer.Produto, "Details", new { customer.Id })</td></tr>
+                <tr><td>@Html.ActionLink(@customer.NumeroProduto, "Details", new { customer.Id })</td></tr>
             }
         </tbody>
     </table>
