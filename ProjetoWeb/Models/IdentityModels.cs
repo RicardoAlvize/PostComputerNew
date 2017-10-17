@@ -26,6 +26,7 @@ namespace ProjetoWeb.Models
         public DbSet<PedidoCancelado> PedidoCancelado { get; set; }
         
 
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

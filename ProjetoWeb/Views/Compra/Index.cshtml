@@ -16,7 +16,7 @@
         <tbody>
             @foreach (var customer in Model)
             {
-                <tr><td>@Html.ActionLink(@customer.NumeroProduto, "Details", new { customer.Id })</td></tr>
+                <tr><td>@Html.ActionLink(@customer.NumeroProduto + " " , "Details", new { customer.Id })</td></tr>
             }
         </tbody>
     </table>
