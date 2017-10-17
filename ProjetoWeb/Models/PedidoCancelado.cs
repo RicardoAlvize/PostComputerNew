@@ -7,7 +7,7 @@ namespace ProjetoWeb.Models
 {
     public class PedidoCancelado
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
     }
 }

@@ -196,7 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CadastrosController.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\CompraController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -205,8 +205,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710172151528_InicialModel.cs" />
+    <Compile Include="Migrations\201710172151528_InicialModel.Designer.cs">
+      <DependentUpon>201710172151528_InicialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710172154580_Cliente.cs" />
+    <Compile Include="Migrations\201710172154580_Cliente.Designer.cs">
+      <DependentUpon>201710172154580_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710172209224_DadosCliente.cs" />
+    <Compile Include="Migrations\201710172209224_DadosCliente.Designer.cs">
+      <DependentUpon>201710172209224_DadosCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Cadastro.cs" />
+    <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Compra.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -276,11 +289,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Cadastros\Index.cshtml" />
-    <Content Include="Views\Cadastros\Details.cshtml" />
-    <Content Include="Views\NovoPedido\Details.cshtml" />
+    <Content Include="Views\Cliente\Index.cshtml" />
+    <Content Include="Views\Cliente\Details.cshtml" />
     <Content Include="Views\NovoPedido\Index.cshtml" />
-    <Content Include="Views\Compra\Details.cshtml" />
     <Content Include="Views\Compra\Index.cshtml" />
     <Content Include="Views\PedidoCancelado\Index.cshtml" />
     <Content Include="Views\Shared\NavBar.cshtml" />
@@ -295,6 +306,17 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710172151528_InicialModel.resx">
+      <DependentUpon>201710172151528_InicialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710172154580_Cliente.resx">
+      <DependentUpon>201710172154580_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710172209224_DadosCliente.resx">
+      <DependentUpon>201710172209224_DadosCliente.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

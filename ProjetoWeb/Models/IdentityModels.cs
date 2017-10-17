@@ -20,6 +20,12 @@ namespace ProjetoWeb.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Compra> Compra { get; set; }
+        public DbSet<NovoPedido> NovoPedido { get; set; }
+        public DbSet<PedidoCancelado> PedidoCancelado { get; set; }
+        
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

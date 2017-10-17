@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ProjetoWeb.Models
 {
-    public class Cadastro
+    public class Cliente
     {
         public int Id{ get; set; }
 
